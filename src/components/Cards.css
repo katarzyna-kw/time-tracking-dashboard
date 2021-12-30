@@ -1,0 +1,150 @@
+.cards-container {
+   display: grid;
+   grid-gap: 1rem;
+   grid-area: "cards"
+}
+
+.card-top {
+   padding-top: 30px;
+   border-radius: var(--radius-val);
+   display: flex;
+   margin: 0;
+}
+.card-top:nth-child(1) {
+   background-color: var(--first);
+   background-image: url('../img/icon-work.svg');
+   background-repeat: no-repeat;
+   background-position: 280px -10px; 
+}
+
+.card-top:nth-child(2) {
+   background-color: var(--second);
+   background-image: url('../img/icon-play.svg');
+   background-repeat: no-repeat;
+   background-position: 280px -10px; 
+}
+
+.card-top:nth-child(3) {
+   background-color: var(--third);
+   background-image: url('../img/icon-study.svg');
+   background-repeat: no-repeat;
+   background-position: 280px -10px; 
+}
+
+.card-top:nth-child(4) {
+   background-color: var(--fourth);
+   background-image: url('../img/icon-exercise.svg');
+   background-repeat: no-repeat;
+   background-position: 280px -2px; 
+}
+
+.card-top:nth-child(5) {
+   background-color: var(--fifth);
+   background-image: url('../img/icon-social.svg');
+   background-repeat: no-repeat;
+   background-position: 290px -15px; 
+}
+
+.card-top:nth-child(6) {
+   background-color: var(--sixth);
+   background-image: url('../img/icon-self-care.svg');
+   background-repeat: no-repeat;
+   background-position: 290px -10px; 
+}
+
+.card-info {
+   background-color: var(--dark-blue);
+   border-radius: var(--radius-val);
+   padding: 20px;
+   color: var(--white);
+   width: 100%;
+   min-width: var(--col-w);
+   max-width: 400px;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-around;
+}
+
+.card-info:nth-child(1) {
+   grid-area: "work";
+}
+
+.card-info:nth-child(2) {
+   grid-area: "play";
+}
+
+.card-info:nth-child(3) {
+   grid-area: "study";
+}
+
+.card-info:nth-child(4) {
+   grid-area: "exercise";
+}
+
+.card-info:nth-child(5) {
+   grid-area: "social";
+}
+
+.card-info:nth-child(6) {
+   grid-area: "self-care";
+}
+
+.icon {
+   width: 18px;
+   height: 5px;
+}
+
+.card-title {
+   display: flex;
+   justify-content: space-between;
+   font-weight: 500;
+}
+
+.card-data {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.current {
+   font-size: 2rem;
+   font-weight: 300;
+   margin-bottom: 0;
+   padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+
+   .cards-container {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-areas:
+         "work play"
+         "study exercise"
+         "social self-care"
+   }
+
+   .card-data {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+   }
+
+   .card-info {
+      max-width: var(--col-w);
+   }
+
+   .current {
+      padding-bottom: 5px;
+   }
+}
+
+
+@media (min-width: 1000px) {
+
+   .cards-container {
+      grid-template-areas:
+         "work play study"
+         "exercise social self-care"
+   }   
+}
