@@ -56,7 +56,15 @@ h3 {
    z-index: 1;
    list-style-type: none;
    padding: 50px 0 20px 0;
-   color: var(--pale-blue);
+   color: var(--gray-blue);
+}
+
+.parameters li {
+   cursor: pointer;
+}
+
+.parameters li:hover {
+   color: #fff;
 }
 
 @media (min-width: 768px) {
