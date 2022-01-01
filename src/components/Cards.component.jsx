@@ -36,7 +36,7 @@ import ellipsis from '../img/icon-ellipsis.svg'
                      <div class="card-info">
                         <div className="card-title">
                            <p key="title">{item.title}</p>
-                           <img className="icon" src={ellipsis} alt="click to choose daily, weekly, monthly view"/>
+                           <img className="icon" src={ellipsis} alt="ellipsis"/>
                         </div>
 
                         {/* {timeframe==="daily" && 

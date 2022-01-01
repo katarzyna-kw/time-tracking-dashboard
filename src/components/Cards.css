@@ -94,6 +94,11 @@
    height: 5px;
 }
 
+.icon:hover {
+   cursor: pointer;
+   filter: brightness(0) invert(1);
+}
+
 .card-title {
    display: flex;
    justify-content: space-between;
