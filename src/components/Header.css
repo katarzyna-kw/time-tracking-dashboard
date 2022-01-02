@@ -3,6 +3,7 @@
    background-color: var(--dark-blue);
    border-bottom-left-radius: var(--radius-val);
    border-bottom-right-radius: var(--radius-val);
+   margin-top: 70px;
 }
 
 header {
@@ -71,6 +72,7 @@ h3 {
    .header-container {
       min-width: var(--col-w);
       max-width: var(--col-w);
+      margin-top: 0;
    }
 
    header {
