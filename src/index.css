@@ -22,6 +22,7 @@ body {
   --sixth: hsl(43, 84%, 65%);
   --darkest-blue: hsl(226, 43%, 10%);
   --dark-blue: hsl(235, 46%, 20%);
+  --hover-blue: hsl(234, 39%, 34%);
   --gray-blue: hsl(235, 45%, 61%);
   --pale-blue: hsl(236, 100%, 87%);
   --white: hsl(0, 0%, 100%);

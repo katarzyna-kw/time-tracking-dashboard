@@ -10,6 +10,7 @@
    display: flex;
    margin: 0;
 }
+
 .card-top:nth-child(1) {
    background-color: var(--first);
    background-image: url('../img/icon-work.svg');
@@ -63,6 +64,11 @@
    display: flex;
    flex-flow: column nowrap;
    justify-content: space-around;
+   cursor: pointer;
+}
+
+.card-info:hover {
+   background-color: var(--hover-blue);
 }
 
 .card-info:nth-child(1) {
