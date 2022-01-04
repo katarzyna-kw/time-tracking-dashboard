@@ -57,16 +57,21 @@ h3 {
    z-index: 1;
    list-style-type: none;
    padding: 50px 0 20px 0;
+}
+
+.param-links {
+   cursor: pointer;
    color: var(--gray-blue);
 }
 
-.parameters li {
-   cursor: pointer;
-}
-
-.parameters li:hover {
+.param-links:hover {
    color: #fff;
 }
+
+.active {
+   color: #fff;
+}
+
 
 @media (min-width: 768px) {
    .header-container {

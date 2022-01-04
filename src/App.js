@@ -11,7 +11,7 @@ function App() {
   return (
     <div class="container">
       <main>
-        <Header view={setTimeframe}/>
+        <Header timeframe={timeframe} view={setTimeframe}/>
         <Cards timeframe={timeframe}/>
       </main>
       <Footer />

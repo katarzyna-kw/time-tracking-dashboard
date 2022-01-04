@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Header.css'
 import avatar from '../img/image-jeremy.png'
 
-  function Header({view}) {
+  function Header({timeframe, view}) {
 
     const showDaily = () => {
       view("daily")
@@ -27,10 +27,11 @@ import avatar from '../img/image-jeremy.png'
             <h3>{name}</h3>
           </div>
         </header>
+
         <ul className="parameters">
-          <li onClick={showDaily}>Daily</li>
-          <li onClick={showWeekly}>Weekly</li>
-          <li onClick={showMonthly}>Monthly</li>
+          <li className={timeframe==='daily' ? "param-links active" : "param-links"} onClick={showDaily}>Daily</li>
+          <li className={timeframe==='weekly' ? "param-links active" : "param-links"} onClick={showWeekly}>Weekly</li>
+          <li className={timeframe==='monthly' ? "param-links active" : "param-links"} onClick={showMonthly}>Monthly</li>
         </ul>
       </section>
    )
