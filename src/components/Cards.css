@@ -148,6 +148,12 @@
    .current {
       padding-bottom: 5px;
    }
+
+   .card-top:nth-child(1) {
+      background-position: 132px -9px;
+      background-size: 28%; 
+   }
+   
 }
 
 

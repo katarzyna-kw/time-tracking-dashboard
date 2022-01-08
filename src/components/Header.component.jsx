@@ -6,7 +6,7 @@ import avatar from '../img/image-jeremy.png'
 
     let name = "Jeremy Robson";
 
-   return (
+    return (
       <section className="header-container">
         <header>
           <img className="avatar" src={avatar} alt="profile avatar" />
