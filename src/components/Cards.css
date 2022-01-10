@@ -158,6 +158,11 @@
       background-position: 132px -6px;
       background-size: 28%; 
    }
+
+   .card-top:nth-child(3) {
+      background-position: 132px -6px;
+      background-size: 28%; 
+   }
    
 }
 
