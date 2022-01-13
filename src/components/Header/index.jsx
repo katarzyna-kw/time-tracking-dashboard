@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import avatar from '../img/image-jeremy.png'
+import avatar from '../../img/image-jeremy.png'
 
   function Header({timeframe, view}) {
 

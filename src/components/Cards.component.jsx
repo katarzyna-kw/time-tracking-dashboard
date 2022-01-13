@@ -28,7 +28,6 @@ import ellipsis from '../img/icon-ellipsis.svg'
    
    useEffect(() => fetchData(), [])
 
- 
    return (
       <section className="cards-container">
                {data && data.length > 0 && data.map((item) => 
@@ -38,25 +37,6 @@ import ellipsis from '../img/icon-ellipsis.svg'
                            <p key="title">{item.title}</p>
                            <img className="icon" src={ellipsis} alt="ellipsis"/>
                         </div>
-
-                        {/* {timeframe==="daily" && 
-                        <div class="card-data">
-                           <p className="current" key="current">{item.timeframes.daily.current}hrs</p>
-                           <p className="previous" key="previous">Yesterday - {item.timeframes.daily.previous}hrs</p>
-                        </div>
-                        }
-                        {timeframe==="weekly" && 
-                        <div class="card-data">
-                           <p className="current" key="current">{item.timeframes.weekly.current}hrs</p>
-                           <p className="previous" key="previous">Last Week - {item.timeframes.weekly.previous}hrs</p>
-                        </div>
-                        }
-                        {timeframe==="monthly" && 
-                        <div class="card-data">
-                           <p className="current" key="current">{item.timeframes.monthly.current}hrs</p>
-                           <p className="previous" key="previous">Last Month - {item.timeframes.monthly.previous}hrs</p>
-                        </div>
-                        } */}
 
                         <div class="card-data"> 
                            {timeframe==="daily" && <p className="current" key="current">{item.timeframes.daily.current}hrs</p>}
