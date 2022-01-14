@@ -8,8 +8,4 @@ main {
    main {
       grid-template-areas: "head cards";
    }
-
-   .header-container {
-      grid-area: "head";
-   }
 }
