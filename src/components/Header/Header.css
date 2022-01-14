@@ -1,8 +1,7 @@
 .header-container {
    max-width: 400px;
    background-color: var(--dark-blue);
-   border-bottom-left-radius: var(--radius-val);
-   border-bottom-right-radius: var(--radius-val);
+   border-radius: var(--radius-val);
    margin-top: 70px;
 }
 
