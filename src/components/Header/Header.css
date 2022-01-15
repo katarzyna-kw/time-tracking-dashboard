@@ -1,11 +1,11 @@
-.header-container {
+.header__container {
    max-width: 400px;
    background-color: var(--dark-blue);
    border-radius: var(--radius-val);
    margin-top: 70px;
 }
 
-header {
+.header__profile {
    position: relative;
    background-color: var(--header-blue);
    color: var(--white);
@@ -19,14 +19,15 @@ header {
    z-index: 999;
 }
 
-.avatar {
+.header__avatar {
    width: 60px;
    height: auto;
-   border: 3px solid var(--white);
-   border-radius: 90px;
+   border: 2px solid var(--white);
+   border-radius: 100%;
+   background-color: var(--white);
 }
 
-.subhead {
+.header__subhead {
    display: flex;
    justify-content: center;
    align-items: flex-start;
@@ -73,14 +74,14 @@ h3 {
 
 
 @media (min-width: 768px) {
-   .header-container {
+   .header__container {
       grid-area: "head";
       min-width: var(--col-w);
       max-width: var(--col-w);
       margin-top: 0;
    }
 
-   header {
+   .header__profile {
       flex-flow: column nowrap;
       justify-content: flex-start;
       align-items: flex-start;
@@ -96,7 +97,7 @@ h3 {
       font-size: 2rem;
    }
 
-   .subhead {
+   .header__subhead {
       margin: 0;
    }
 
@@ -112,7 +113,7 @@ h3 {
 
 @media (min-width: 1075px) {
 
-   header {
+   .header__profile {
       min-height: 200px;
    }
 }
