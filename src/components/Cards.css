@@ -1,59 +1,65 @@
-.cards-container {
+.cards {
    display: grid;
    grid-gap: 1rem;
    grid-area: "cards"
 }
 
-.card-top {
-   padding-top: 30px;
-   border-radius: var(--radius-val);
+.card {
    display: flex;
+   flex-flow: column wrap;
    margin: 0;
 }
 
-.card-top:nth-child(1) {
+.card__header {
+   height: 60px;
+   width: 100%;
+   border-radius: var(--radius-val);
+   margin-bottom: -20px;
+}
+
+.card:nth-of-type(1) .card__header {
    background-color: var(--first);
    background-image: url('../img/icon-work.svg');
    background-repeat: no-repeat;
    background-position: 280px -10px; 
 }
 
-.card-top:nth-child(2) {
+.card:nth-of-type(2) .card__header {
    background-color: var(--second);
    background-image: url('../img/icon-play.svg');
    background-repeat: no-repeat;
    background-position: 280px -10px; 
 }
 
-.card-top:nth-child(3) {
+.card:nth-of-type(3) .card__header {
    background-color: var(--third);
    background-image: url('../img/icon-study.svg');
    background-repeat: no-repeat;
    background-position: 280px -10px; 
 }
 
-.card-top:nth-child(4) {
+.card:nth-of-type(4) .card__header {
    background-color: var(--fourth);
    background-image: url('../img/icon-exercise.svg');
    background-repeat: no-repeat;
    background-position: 280px -2px; 
 }
 
-.card-top:nth-child(5) {
+.card:nth-of-type(5) .card__header {
    background-color: var(--fifth);
    background-image: url('../img/icon-social.svg');
    background-repeat: no-repeat;
    background-position: 290px -15px; 
 }
 
-.card-top:nth-child(6) {
+.card:nth-of-type(6) .card__header {
    background-color: var(--sixth);
    background-image: url('../img/icon-self-care.svg');
    background-repeat: no-repeat;
    background-position: 290px -10px; 
 }
 
-.card-info {
+.card__body {
    background-color: var(--dark-blue);
    border-radius: var(--radius-val);
    padding: 20px;
@@ -65,77 +71,77 @@
    flex-flow: column nowrap;
    justify-content: space-around;
    cursor: pointer;
-   /* margin-bottom: -2px; */
+   height: calc(100% - 40px);
 }
 
-.card-info:hover {
+.card__body:hover {
    background-color: var(--hover-blue);
 }
 
-.card-info:nth-child(1) {
+.card__body:nth-child(1) {
    grid-area: "work";
 }
 
-.card-info:nth-child(2) {
+.card__body:nth-child(2) {
    grid-area: "play";
 }
 
-.card-info:nth-child(3) {
+.card__body:nth-child(3) {
    grid-area: "study";
 }
 
-.card-info:nth-child(4) {
+.card__body:nth-child(4) {
    grid-area: "exercise";
 }
 
-.card-info:nth-child(5) {
+.card__body:nth-child(5) {
    grid-area: "social";
 }
 
-.card-info:nth-child(6) {
+.card__body:nth-child(6) {
    grid-area: "self-care";
 }
 
-.icon {
-   width: 18px;
-   height: 5px;
-}
-
-.icon:hover {
-   cursor: pointer;
-   filter: brightness(0) invert(1);
-}
-
-.card-title {
+.card__label {
    display: flex;
    justify-content: space-between;
    font-weight: 500;
 }
 
-.card-data {
+.card__title {
+   font-size: 1rem;
+}
+
+.card__ellipsis {
+   width: 18px;
+   height: 5px;
+}
+
+.card__ellipsis:hover {
+   cursor: pointer;
+   filter: brightness(0) invert(1);
+}
+
+.card__data {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
 
-.card-text {
-   font-size: 1rem;
-}
-
-.current {
+.card__data--current {
    font-size: 2rem;
    font-weight: 300;
    margin-bottom: 0;
    padding-bottom: 0;
 }
 
-.previous {
+.card__data--previous {
    font-size: .8rem;
 }
 
 @media (min-width: 768px) {
 
-   .cards-container {
+   .cards {
       display: grid;
       grid-gap: 1rem;
       grid-template-areas:
@@ -144,56 +150,54 @@
          "social self-care"
    }
 
-   .card-data {
+   .card__data {
       display: flex;
       flex-flow: column nowrap;
       align-items: flex-start;
    }
 
-   .card-info {
+   .card__body {
       max-width: var(--col-w);
    }
 
-   .current {
+   .card__data--current {
       padding-bottom: 5px;
    }
 
-   .card-top:nth-child(1) {
+   .card:nth-of-type(1) .card__header {
       background-position: 132px -9px;
       background-size: 28%; 
    }
 
-   .card-top:nth-child(2) {
+   .card:nth-of-type(2) .card__header {
       background-position: 132px -6px;
       background-size: 28%; 
    }
 
-   .card-top:nth-child(3) {
+   .card:nth-of-type(3) .card__header {
       background-position: 132px -6px;
       background-size: 28%; 
    }
 
-   .card-top:nth-child(4) {
+   .card:nth-of-type(4) .card__header {
       background-position: 132px -1px;
       background-size: 28%; 
    }
 
-   .card-top:nth-child(5) {
+   .card:nth-of-type(5) .card__header {
       background-position: 135px -13px;
       background-size: 28%; 
    }
 
-   .card-top:nth-child(6) {
+   .card:nth-of-type(6) .card__header {
       background-position: 135px -14px;
       background-size: 28%; 
    }
-
 }
-
 
 @media (min-width: 1000px) {
 
-   .cards-container {
+   .cards {
       grid-template-areas:
          "work play study"
          "exercise social self-care"

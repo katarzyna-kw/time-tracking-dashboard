@@ -29,23 +29,23 @@ import ellipsis from '../img/icon-ellipsis.svg'
    useEffect(() => fetchData(), [])
 
    return (
-      <section className="cards-container">
+      <section className="cards">
                {data && data.length > 0 && data.map((item) => 
-                  <div class="card-top">
-                     <div class="card-head"></div>
-                     <div class="card-info">
-                        <div className="card-title">
-                           <p className="card-text" key="title">{item.title}</p>
-                           <img className="icon" src={ellipsis} alt="ellipsis"/>
+                  <div class="card">
+                     <div class="card__header"></div>
+                     <div class="card__body">
+                        <div className="card__label">
+                           <p className="card__title" key="title">{item.title}</p>
+                           <img className="card__ellipsis" src={ellipsis} alt="ellipsis"/>
                         </div>
 
-                        <div class="card-data"> 
-                           {timeframe==="daily" && <p className="current" key="current">{item.timeframes.daily.current}hrs</p>}
-                           {timeframe==="daily" && <p className="previous" key="previous">Yesterday - {item.timeframes.daily.previous}hrs</p>}
-                           {timeframe==="weekly" && <p className="current" key="current">{item.timeframes.weekly.current}hrs</p>}
-                           {timeframe==="weekly" && <p className="previous" key="previous">Last Week - {item.timeframes.weekly.previous}hrs</p>}
-                           {timeframe==="monthly" && <p className="current" key="current">{item.timeframes.monthly.current}hrs</p>}
-                           {timeframe==="monthly" && <p className="previous" key="previous">Last Month - {item.timeframes.monthly.previous}hrs</p>}
+                        <div class="card__data"> 
+                           {timeframe==="daily" && <p className="card__data--current" key="current">{item.timeframes.daily.current}hrs</p>}
+                           {timeframe==="daily" && <p className="card__data--previous" key="previous">Yesterday - {item.timeframes.daily.previous}hrs</p>}
+                           {timeframe==="weekly" && <p className="card__data--current" key="current">{item.timeframes.weekly.current}hrs</p>}
+                           {timeframe==="weekly" && <p className="card__data--previous" key="previous">Last Week - {item.timeframes.weekly.previous}hrs</p>}
+                           {timeframe==="monthly" && <p className="card__data--current" key="current">{item.timeframes.monthly.current}hrs</p>}
+                           {timeframe==="monthly" && <p className="card__data--previous" key="previous">Last Month - {item.timeframes.monthly.previous}hrs</p>}
                         </div>
                      </div>
                   </div>
