@@ -19,42 +19,42 @@
 
 .card:nth-of-type(1) .card__header {
    background-color: var(--first);
-   background-image: url('../img/icon-work.svg');
+   background-image: url('../../img/icon-work.svg');
    background-repeat: no-repeat;
    background-position: 280px -10px; 
 }
 
 .card:nth-of-type(2) .card__header {
    background-color: var(--second);
-   background-image: url('../img/icon-play.svg');
+   background-image: url('../../img/icon-play.svg');
    background-repeat: no-repeat;
    background-position: 280px -10px; 
 }
 
 .card:nth-of-type(3) .card__header {
    background-color: var(--third);
-   background-image: url('../img/icon-study.svg');
+   background-image: url('../../img/icon-study.svg');
    background-repeat: no-repeat;
    background-position: 280px -10px; 
 }
 
 .card:nth-of-type(4) .card__header {
    background-color: var(--fourth);
-   background-image: url('../img/icon-exercise.svg');
+   background-image: url('../../img/icon-exercise.svg');
    background-repeat: no-repeat;
    background-position: 280px -2px; 
 }
 
 .card:nth-of-type(5) .card__header {
    background-color: var(--fifth);
-   background-image: url('../img/icon-social.svg');
+   background-image: url('../../img/icon-social.svg');
    background-repeat: no-repeat;
    background-position: 290px -15px; 
 }
 
 .card:nth-of-type(6) .card__header {
    background-color: var(--sixth);
-   background-image: url('../img/icon-self-care.svg');
+   background-image: url('../../img/icon-self-care.svg');
    background-repeat: no-repeat;
    background-position: 290px -10px; 
 }

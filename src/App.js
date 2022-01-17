@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import ProfileCard from './components/ProfileCard'
-import Cards from './components/Cards.component'
+import TrackingCards from './components/TrackingCards'
 import Footer from './components/Footer'
 import './App.css';
 
@@ -12,7 +12,7 @@ function App() {
     <div class="container">
       <main>
         <ProfileCard timeframe={timeframe} view={setTimeframe}/>
-        <Cards timeframe={timeframe}/>
+        <TrackingCards timeframe={timeframe}/>
       </main>
       <Footer />
     </div>
