@@ -13,7 +13,7 @@ body {
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --header-blue: hsl(246, 80%, 60%);
+  --profile-blue: hsl(246, 80%, 60%);
   --first: hsl(15, 100%, 70%);
   --second: hsl(195, 74%, 62%);
   --third: hsl(348, 100%, 68%);

@@ -32,9 +32,10 @@ import ellipsis from '../img/icon-ellipsis.svg'
       <section className="cards-container">
                {data && data.length > 0 && data.map((item) => 
                   <div class="card-top">
+                     <div class="card-head"></div>
                      <div class="card-info">
                         <div className="card-title">
-                           <p key="title">{item.title}</p>
+                           <p className="card-text" key="title">{item.title}</p>
                            <img className="icon" src={ellipsis} alt="ellipsis"/>
                         </div>
 

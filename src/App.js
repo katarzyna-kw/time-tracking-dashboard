@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Header from './components/Header'
+import ProfileCard from './components/ProfileCard'
 import Cards from './components/Cards.component'
 import Footer from './components/Footer'
 import './App.css';
@@ -11,7 +11,7 @@ function App() {
   return (
     <div class="container">
       <main>
-        <Header timeframe={timeframe} view={setTimeframe}/>
+        <ProfileCard timeframe={timeframe} view={setTimeframe}/>
         <Cards timeframe={timeframe}/>
       </main>
       <Footer />

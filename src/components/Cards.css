@@ -65,6 +65,7 @@
    flex-flow: column nowrap;
    justify-content: space-around;
    cursor: pointer;
+   /* margin-bottom: -2px; */
 }
 
 .card-info:hover {
@@ -117,11 +118,19 @@
    align-items: center;
 }
 
+.card-text {
+   font-size: 1rem;
+}
+
 .current {
    font-size: 2rem;
    font-weight: 300;
    margin-bottom: 0;
    padding-bottom: 0;
+}
+
+.previous {
+   font-size: .8rem;
 }
 
 @media (min-width: 768px) {
