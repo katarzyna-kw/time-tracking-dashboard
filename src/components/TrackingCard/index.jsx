@@ -1,6 +1,6 @@
 import React from 'react'
+import Ellipsis from '../Ellipsis'
 import './TrackingCard.css'
-import ellipsis from '../../img/icon-ellipsis.svg'
 
 function TrackingCard( {timeframe, item} ) {
    return (
@@ -13,11 +13,7 @@ function TrackingCard( {timeframe, item} ) {
                   key="title">
                      {item.title}
                </p>
-               <img  
-                  className="card__ellipsis" 
-                  src={ellipsis}
-                  alt="ellipsis"
-               />
+               <Ellipsis />
             </div>
 
             <div class="card__data"> 
