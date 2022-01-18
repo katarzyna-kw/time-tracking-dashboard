@@ -1,5 +1,6 @@
 import React from 'react'
 import Ellipsis from '../Ellipsis'
+import Timeframes from '../Timeframes'
 import './TrackingCard.css'
 
 function TrackingCard( {timeframe, item} ) {
@@ -15,50 +16,10 @@ function TrackingCard( {timeframe, item} ) {
                </p>
                <Ellipsis />
             </div>
-
-            <div class="card__data"> 
-               {timeframe==="daily" && 
-                  <p 
-                     className="card__data--current" 
-                     key="current">
-                        {item.timeframes.daily.current}hrs
-                  </p>
-               }
-               {timeframe==="daily" && 
-                  <p 
-                     className="card__data--previous" 
-                     key="previous">
-                        Yesterday - {item.timeframes.daily.previous}hrs
-                  </p>
-               }
-               {timeframe==="weekly" && 
-                  <p 
-                     className="card__data--current" 
-                     key="current">
-                        {item.timeframes.weekly.current}hrs
-                  </p>
-               }
-               {timeframe==="weekly" && 
-                  <p 
-                     className="card__data--previous" 
-                     key="previous">
-                        Last Week - {item.timeframes.weekly.previous}hrs
-                  </p>
-               }
-               {timeframe==="monthly" && 
-                  <p 
-                     className="card__data--current" 
-                     key="current">
-                        {item.timeframes.monthly.current}hrs
-                  </p>
-               }
-               {timeframe==="monthly" && 
-                  <p className="card__data--previous" 
-                  key="previous">
-                     Last Month - {item.timeframes.monthly.previous}hrs
-                  </p>
-               }
-            </div>
+            <Timeframes 
+               timeframe={timeframe}
+               item={item}
+            />
          </div>
       </div>
    )
