@@ -1,25 +1,24 @@
 .cards {
-   display: grid;
-   grid-gap: 1rem;
-   grid-area: "cards"
+  display: grid;
+  grid-gap: 1rem;
+  grid-area: "cards";
 }
 
 @media (min-width: 768px) {
-   .cards {
-      display: grid;
-      grid-gap: 1rem;
-      grid-template-areas:
-         "work play"
-         "study exercise"
-         "social self-care"
-   }
+  .cards {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+      "work play"
+      "study exercise"
+      "social self-care";
+  }
 }
 
 @media (min-width: 1000px) {
-
-   .cards {
-      grid-template-areas:
-         "work play study"
-         "exercise social self-care"
-   }   
+  .cards {
+    grid-template-areas:
+      "work play study"
+      "exercise social self-care";
+  }
 }
