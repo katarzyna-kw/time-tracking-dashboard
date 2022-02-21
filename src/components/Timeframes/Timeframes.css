@@ -1,16 +1,16 @@
 .card__data--current {
-   font-size: 2rem;
-   font-weight: 300;
-   margin-bottom: 0;
-   padding-bottom: 0;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .card__data--previous {
-   font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 @media (min-width: 768px) {
-   .card__data--current {
-      padding-bottom: 5px;
-   }
+  .card__data--current {
+    padding-bottom: 5px;
+  }
 }

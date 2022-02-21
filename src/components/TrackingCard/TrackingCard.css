@@ -1,170 +1,170 @@
 .card {
-   display: flex;
-   flex-flow: column wrap;
-   margin: 0;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0;
 }
 
 .card__header {
-   height: 60px;
-   width: 100%;
-   border-radius: var(--radius-val);
-   margin-bottom: -20px;
+  height: 60px;
+  width: 100%;
+  border-radius: var(--radius-val);
+  margin-bottom: -20px;
 }
 
 .card:nth-of-type(1) .card__header {
-   background-color: var(--first);
-   background-image: url('../../img/icon-work.svg');
-   background-repeat: no-repeat;
-   background-position: 280px -10px; 
+  background-color: var(--first);
+  background-image: url("../../img/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: 280px -10px;
 }
 
 .card:nth-of-type(2) .card__header {
-   background-color: var(--second);
-   background-image: url('../../img/icon-play.svg');
-   background-repeat: no-repeat;
-   background-position: 280px -10px; 
+  background-color: var(--second);
+  background-image: url("../../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: 280px -10px;
 }
 
 .card:nth-of-type(3) .card__header {
-   background-color: var(--third);
-   background-image: url('../../img/icon-study.svg');
-   background-repeat: no-repeat;
-   background-position: 280px -10px; 
+  background-color: var(--third);
+  background-image: url("../../img/icon-study.svg");
+  background-repeat: no-repeat;
+  background-position: 280px -10px;
 }
 
 .card:nth-of-type(4) .card__header {
-   background-color: var(--fourth);
-   background-image: url('../../img/icon-exercise.svg');
-   background-repeat: no-repeat;
-   background-position: 280px -2px; 
+  background-color: var(--fourth);
+  background-image: url("../../img/icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position: 280px -2px;
 }
 
 .card:nth-of-type(5) .card__header {
-   background-color: var(--fifth);
-   background-image: url('../../img/icon-social.svg');
-   background-repeat: no-repeat;
-   background-position: 290px -15px; 
+  background-color: var(--fifth);
+  background-image: url("../../img/icon-social.svg");
+  background-repeat: no-repeat;
+  background-position: 290px -15px;
 }
 
 .card:nth-of-type(6) .card__header {
-   background-color: var(--sixth);
-   background-image: url('../../img/icon-self-care.svg');
-   background-repeat: no-repeat;
-   background-position: 290px -10px; 
+  background-color: var(--sixth);
+  background-image: url("../../img/icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position: 290px -10px;
 }
 
 .card__body {
-   background-color: var(--dark-blue);
-   border-radius: var(--radius-val);
-   padding: 20px;
-   color: var(--white);
-   width: 100%;
-   min-width: var(--col-w);
-   max-width: 400px;
-   display: flex;
-   flex-flow: column nowrap;
-   justify-content: space-around;
-   cursor: pointer;
-   height: calc(100% - 40px);
+  background-color: var(--dark-blue);
+  border-radius: var(--radius-val);
+  padding: 20px;
+  color: var(--white);
+  width: 100%;
+  min-width: var(--col-w);
+  max-width: 400px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  cursor: pointer;
+  height: calc(100% - 40px);
 }
 
 .card__body:hover {
-   background-color: var(--hover-blue);
+  background-color: var(--hover-blue);
 }
 
 .card__body:nth-child(1) {
-   grid-area: "work";
+  grid-area: "work";
 }
 
 .card__body:nth-child(2) {
-   grid-area: "play";
+  grid-area: "play";
 }
 
 .card__body:nth-child(3) {
-   grid-area: "study";
+  grid-area: "study";
 }
 
 .card__body:nth-child(4) {
-   grid-area: "exercise";
+  grid-area: "exercise";
 }
 
 .card__body:nth-child(5) {
-   grid-area: "social";
+  grid-area: "social";
 }
 
 .card__body:nth-child(6) {
-   grid-area: "self-care";
+  grid-area: "self-care";
 }
 
 .card__label {
-   display: flex;
-   justify-content: space-between;
-   font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
 }
 
 .card__title {
-   font-size: 1rem;
+  font-size: 1rem;
 }
 
 .card__data {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card__data--current {
-   font-size: 2rem;
-   font-weight: 300;
-   margin-bottom: 0;
-   padding-bottom: 0;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .card__data--previous {
-   font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 @media (min-width: 768px) {
-   .card__data {
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: flex-start;
-   }
+  .card__data {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
 
-   .card__body {
-      max-width: var(--col-w);
-   }
+  .card__body {
+    max-width: var(--col-w);
+  }
 
-   .card__data--current {
-      padding-bottom: 5px;
-   }
+  .card__data--current {
+    padding-bottom: 5px;
+  }
 
-   .card:nth-of-type(1) .card__header {
-      background-position: 132px -9px;
-      background-size: 28%; 
-   }
+  .card:nth-of-type(1) .card__header {
+    background-position: 132px -9px;
+    background-size: 28%;
+  }
 
-   .card:nth-of-type(2) .card__header {
-      background-position: 132px -6px;
-      background-size: 28%; 
-   }
+  .card:nth-of-type(2) .card__header {
+    background-position: 132px -6px;
+    background-size: 28%;
+  }
 
-   .card:nth-of-type(3) .card__header {
-      background-position: 132px -6px;
-      background-size: 28%; 
-   }
+  .card:nth-of-type(3) .card__header {
+    background-position: 132px -6px;
+    background-size: 28%;
+  }
 
-   .card:nth-of-type(4) .card__header {
-      background-position: 132px -1px;
-      background-size: 28%; 
-   }
+  .card:nth-of-type(4) .card__header {
+    background-position: 132px -1px;
+    background-size: 28%;
+  }
 
-   .card:nth-of-type(5) .card__header {
-      background-position: 135px -13px;
-      background-size: 28%; 
-   }
+  .card:nth-of-type(5) .card__header {
+    background-position: 135px -13px;
+    background-size: 28%;
+  }
 
-   .card:nth-of-type(6) .card__header {
-      background-position: 135px -14px;
-      background-size: 28%; 
-   }
+  .card:nth-of-type(6) .card__header {
+    background-position: 135px -14px;
+    background-size: 28%;
+  }
 }
